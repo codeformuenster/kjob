@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  redis:
+    build: ./redis-with-json
+
+  kjob:
+    build: .
+    volumes:
+      - .:/usr/src/app
